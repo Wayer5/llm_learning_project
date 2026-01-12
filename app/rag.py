@@ -31,4 +31,3 @@ def retrieve_context(query: str, top_k=2, threshold=0.65):
     # Отбираем документы выше порога
     selected = [DOCUMENTS[i] for i in top_indices if scores[i] >= threshold][:top_k]
     return selected
-    return selected
